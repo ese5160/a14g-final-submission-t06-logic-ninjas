@@ -5,7 +5,7 @@
     * Team Name: Logic Ninjas
     * Team Members: Vishnu Venkatesh and Yadnik Bendale
     * Github Repository URL: https://github.com/ese5160/ec01g-mcad-model-t06-logic-ninjas/tree/main
-    * Description of test hardware: Solidworks
+    * Description of test hardware: PCBA, SAMW25
 
 
 ## 1. Video Presentation
