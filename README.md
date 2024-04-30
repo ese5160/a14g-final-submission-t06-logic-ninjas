@@ -10,6 +10,8 @@
 
 ## 1. Video Presentation
 
+Link to video presentation of video: 
+
 ## 2. Project Summary
 
 ## 3. Hardware & Software Requirements
