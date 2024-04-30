@@ -49,30 +49,50 @@ Link to video presentation of video:
 - **Acknowledgements**: Note any tools, websites, or expertise that heavily contributed to your project. Include these in your GitHub Readme.
 
 ## 3. Hardware & Software Requirements
-#### Hardware Requirements:
-HRS 01: The device shall incorporate an external ADC with a sampling frequency exceeding 800kHz, enabling precise and high-resolution data capture.
-HRS 02: The device shall ensure at least a single sample per bit for each protocol, with capabilities for multiple samples per bit to adapt to various protocol speeds and baud rates.
-HRS 03: The device shall be designed to process the captured signals and transmit this processed data wirelessly to a designated web server, enabling remote data analysis and review.
-HRS 04: The device shall feature a user-friendly push button interface for selecting the communication protocol. Each button starts the sampling process and indicates the active protocol via its LED, ensuring clear user feedback.
-HRS 05: Integration of a microSD card shall allow for comprehensive data logging for each sampling session, providing a robust data retention solution.
-HRS 07: The device shall include a manual power supply switch, granting users direct control over its power state, thereby enhancing usability and energy efficiency.
-HRS 08: LED indicators will be incorporated to visually represent various device statuses, such as power on, sampling in progress, and Wi-Fi connectivity status.
-HRS 09: The device shall be battery-powered, ensuring portability. An LDO will be utilized to step down the voltage appropriately, maintaining stable operation and prolonging battery life.
-HRS 10: The SAMD21 microcontroller shall serve as the cornerstone of the device, handling core processing tasks and wireless communications, ensuring robust and reliable performance.
-HRS 11: An integrated real-time clock shall be utilized for precise timestamping of data samples and transactions, crucial for accurate diagnostics and data analysis.
-HRS 12: The device's design shall prioritize minimal processing and communication delays, ensuring that the interval from signal sampling to its display on the user interface remains under 2 seconds.
 
 
-#### Software Requirements:
+### Hardware Requirements
 
-SRS 01: The firmware shall be developed in bare-metal C, ensuring optimal performance for signal processing, enabling close-to-hardware operations.
-SRS 02: An RTOS shall be implemented to efficiently handle multiple concurrent tasks, including sampling, data processing, and communication, ensuring smooth operation and responsiveness.
-SRS 03: Algorithms for decoding signals from I2C, SPI, UART, and GPIO protocols shall be incorporated, ensuring the device can interpret various communication standards.
-SRS 04: The software shall include a web-based user interface, displaying data in a format that is easy to understand, allowing users to analyze captured signals effectively.
-SRS 05: Configurable settings for Wi-Fi credentials, server address, and port numbers shall be provided, ensuring flexibility and adaptability to different network environments.
-SRS 06: Error-handling routines shall be included to alert users of any internet connectivity issues or data transmission errors, enhancing the reliability of the device.
-SRS 07: OTA update capability shall be supported, allowing the device firmware to be updated remotely, ensuring the device stays current with improvements and bug fixes.
-SRS 08: The software shall manage the RTC to provide accurate timestamps for data samples. Microcontroller timers will be used to achieve millisecond precision for interval measurements, crucial for detailed data analysis.
+**HRS 01**: Incorporate an external ADC with a sampling frequency exceeding 800kHz for precise, high-resolution data capture.
+
+**HRS 02**: Ensure at least a single sample per bit for each protocol, with enhanced sampling capabilities for faster protocols to accommodate various speeds and baud rates.
+
+**HRS 03**: Design the device to process captured signals and wirelessly transmit this data to a web server, facilitating remote data analysis.
+
+**HRS 04**: Include a user-friendly push button interface for protocol selection. Each button activates sampling and indicates the active protocol via its corresponding LED.
+
+**HRS 05**: Integrate a microSD card slot for comprehensive data logging of each sampling session, ensuring robust data retention.
+
+**HRS 07**: Equip the device with a manual power supply switch, giving users direct control over its power state and enhancing energy efficiency.
+
+**HRS 08**: Utilize LED indicators to visually signal various device statuses, including power, sampling activity, and Wi-Fi connectivity.
+
+**HRS 09**: Power the device with batteries, incorporating an LDO to ensure stable operation and extend battery life, enhancing portability.
+
+**HRS 10**: Utilize the SAMD21 microcontroller as the processing core, managing core tasks and wireless communication for reliable performance.
+
+**HRS 11**: Integrate a real-time clock for precise timestamping of data samples and transactions, crucial for accurate diagnostics.
+
+**HRS 12**: Minimize processing and communication delays, aiming for data display on the user interface within 2 seconds of sampling.
+
+### Software Requirements
+
+**SRS 01**: Develop firmware in bare-metal C to optimize performance and precision in signal processing.
+
+**SRS 02**: Implement an RTOS to efficiently manage multiple concurrent tasks, including data sampling, processing, and communication.
+
+**SRS 03**: Include algorithms to decode signals from protocols such as I2C, SPI, UART, and GPIO, ensuring broad communication compatibility.
+
+**SRS 04**: Provide a web-based user interface that displays data clearly and intuitively, enabling effective signal analysis.
+
+**SRS 05**: Offer configurable settings for Wi-Fi credentials and server details to accommodate various network environments.
+
+**SRS 06**: Implement error-handling routines to alert users to any internet connectivity or data transmission issues, enhancing device reliability.
+
+**SRS 07**: Support OTA updates, allowing for remote firmware upgrades to keep the device up-to-date with the latest features and fixes.
+
+**SRS 08**: Manage the RTC to ensure precise data timestamping, using microcontroller timers for millisecond accuracy in interval measurements.
+
 
 ## 4. Project Photos & Screenshots
 
