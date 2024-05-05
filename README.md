@@ -23,7 +23,7 @@ Link to video presentation of video:
 
 ### Inspiration
 - **Motivation**: 
-  The idea for this device was inspired by the challenges faced by professionals in various fields who require robust and mobile diagnostic tools:
+  The idea for this device was inspired by the challenges faced by professionals in various fields who require robust and mobile diagnostic tool without needed an external device like a loptop to display the probed data, some potential target domains are:
   
   - **Embedded Systems Engineers**: Enables on-site debugging without dismantling equipment.
   - **Robotics Developers**: Facilitates real-time monitoring and troubleshooting of robotic systems in motion.
