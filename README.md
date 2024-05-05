@@ -85,48 +85,67 @@ To advance the project, we plan to upgrade the ADCs to models with superior reso
 
 ## 3. Hardware & Software Requirements
 
-
 ### Hardware Requirements
 
-**HRS 01**: Incorporate an external ADC with a sampling frequency exceeding 800kHz for precise, high-resolution data capture.
+- **HRS 01**: Incorporate an external ADC with a sampling frequency exceeding 800kHz for precise, high-resolution data capture.
+  - Status: Achieved and verified with an oscilloscope.
 
-**HRS 02**: Ensure at least a single sample per bit for each protocol, with enhanced sampling capabilities for faster protocols to accommodate various speeds and baud rates.
+- **HRS 02**: Ensure at least a single sample per bit for each protocol, with enhanced sampling capabilities for faster protocols to accommodate various speeds and baud rates.
+  - Status: Partially met; limited to one constant bit rate due to ADC hardware constraints.
 
-**HRS 03**: Design the device to process captured signals and wirelessly transmit this data to a web server, facilitating remote data analysis.
+- **HRS 03**: Design the device to process captured signals and wirelessly transmit this data to a web server, facilitating remote data analysis.
+  - Status: Successfully implemented, with data visualized in real-time on a Node-RED dashboard.
 
-**HRS 04**: Include a user-friendly push button interface for protocol selection. Each button activates sampling and indicates the active protocol via its corresponding LED.
+- **HRS 04**: Include a user-friendly push button interface for protocol selection, with each button activating sampling and indicating the active protocol via its corresponding LED.
+  - Status: Achieved using a port expander over the I2C protocol.
 
-**HRS 05**: Integrate a microSD card slot for comprehensive data logging of each sampling session, ensuring robust data retention.
+- **HRS 05**: Integrate a microSD card slot for comprehensive data logging of each sampling session, ensuring robust data retention.
+  - Status: Implemented; data is saved to the SD card in real-time upon button press.
 
-**HRS 07**: Equip the device with a manual power supply switch, giving users direct control over its power state and enhancing energy efficiency.
+- **HRS 07**: Equip the device with a manual power supply switch, giving users direct control over its power state and enhancing energy efficiency.
+  - Status: Not implemented due to predefined power circuitry constraints.
 
-**HRS 08**: Utilize LED indicators to visually signal various device statuses, including power, sampling activity, and Wi-Fi connectivity.
+- **HRS 08**: Utilize LED indicators to visually signal various device statuses, including power, sampling activity, and Wi-Fi connectivity.
+  - Status: Replaced LEDs with a screen, effectively indicating data sampling status.
 
-**HRS 09**: Power the device with batteries, incorporating an LDO to ensure stable operation and extend battery life, enhancing portability.
+- **HRS 09**: Power the device with batteries, incorporating an LDO to ensure stable operation and extend battery life, enhancing portability.
+  - Status: Successfully implemented; device operated correctly with an external battery.
 
-**HRS 10**: Utilize the SAMD21 microcontroller as the processing core, managing core tasks and wireless communication for reliable performance.
+- **HRS 10**: Utilize the SAMD21 microcontroller as the processing core, managing core tasks and wireless communication for reliable performance.
+  - Status: Successfully demonstrated on demo day.
 
-**HRS 11**: Integrate a real-time clock for precise timestamping of data samples and transactions, crucial for accurate diagnostics.
+- **HRS 11**: Integrate a real-time clock for precise timestamping of data samples and transactions, crucial for accurate diagnostics.
+  - Status: Successfully implemented.
 
-**HRS 12**: Minimize processing and communication delays, aiming for data display on the user interface within 2 seconds of sampling.
+- **HRS 12**: Minimize processing and communication delays, aiming for data display on the user interface within 2 seconds of sampling.
+  - Status: Achieved with effective wireless transmission rates.
 
 ### Software Requirements
 
-**SRS 01**: Develop firmware in bare-metal C to optimize performance and precision in signal processing.
+- **SRS 01**: Develop firmware in bare-metal C to optimize performance and precision in signal processing.
+  - Status: Not implemented; firmware developed using FreeRTOS, meeting design needs.
 
-**SRS 02**: Implement an RTOS to efficiently manage multiple concurrent tasks, including data sampling, processing, and communication.
+- **SRS 02**: Implement an RTOS to efficiently manage multiple concurrent tasks, including data sampling, processing, and communication.
+  - Status: Achieved; however, experienced challenges with multiple I2C devices and memory management.
 
-**SRS 03**: Include algorithms to decode signals from protocols such as I2C, SPI, UART, and GPIO, ensuring broad communication compatibility.
+- **SRS 03**: Include algorithms to decode signals from protocols such as I2C, SPI, UART, and GPIO, ensuring broad communication compatibility.
+  - Status: Successfully implemented using queues.
 
-**SRS 04**: Provide a web-based user interface that displays data clearly and intuitively, enabling effective signal analysis.
+- **SRS 04**: Provide a web-based user interface that displays data clearly and intuitively, enabling effective signal analysis.
+  - Status: Implemented using Node-RED.
 
-**SRS 05**: Offer configurable settings for Wi-Fi credentials and server details to accommodate various network environments.
+- **SRS 05**: Offer configurable settings for Wi-Fi credentials and server details to accommodate various network environments.
+  - Status: Not implemented; settings were predefined for the course using Node-RED and Azure.
 
-**SRS 06**: Implement error-handling routines to alert users to any internet connectivity or data transmission issues, enhancing device reliability.
+- **SRS 06**: Implement error-handling routines to alert users to any internet connectivity or data transmission issues, enhancing device reliability.
+  - Status: Not implemented due to time constraints.
 
-**SRS 07**: Support OTA updates, allowing for remote firmware upgrades to keep the device up-to-date with the latest features and fixes.
+- **SRS 07**: Support OTA updates, allowing for remote firmware upgrades to keep the device up-to-date with the latest features and fixes.
+  - Status: Successfully demonstrated OTA functionality on demo day.
 
-**SRS 08**: Manage the RTC to ensure precise data timestamping, using microcontroller timers for millisecond accuracy in interval measurements.
+- **SRS 08**: Manage the RTC to ensure precise data timestamping, using microcontroller timers for millisecond accuracy in interval measurements.
+  - Status: Successfully implemented; file names as timestamps demonstrated to TAs on demo day.
+
 
 
 ## 4. Project Photos & Screenshots
