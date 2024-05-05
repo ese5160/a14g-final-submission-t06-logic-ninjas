@@ -39,7 +39,7 @@ Link to video presentation of video:
   The device is equipped with four ADCs, each dedicated to monitoring a specific communication protocol, enhancing the precision of data capture. An RTC is integrated for timestamping data, which is stored on an SD card with timestamps used as file names. A port expander is utilized to increase the number of I/O ports on the board, accommodating additional functionalities. The primary actuator is the display, which notifies the user when data is being probed.
 
 - **Block Diagram**: 
-  ![Insert your block diagram image here]
+![Simple System Diagram](images/1.png)
 
 ### Challenges
 - **Difficulties Encountered**: 
