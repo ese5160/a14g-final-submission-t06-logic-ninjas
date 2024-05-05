@@ -70,9 +70,9 @@ To advance the project, we plan to upgrade the ADCs to models with superior reso
 
 ### Open Source and Acknowledgements
 - **Open Source Use**: 
-  Our project integrates several open-source components, ensuring adherence to their respective licenses:
-  - **DS3231-RTC Library**: This library is used for interfacing with the DS3231 real-time clock module. It is sourced from [hasenradball's DS3231-RTC repository on GitHub](https://github.com/hasenradball/DS3231-RTC).
-  - **ESP32 I2C LCD1602 Example**: We utilized this example code to manage the LCD display via the I2C protocol, applicable to our ESP32 module. The source code is available at [DavidAntliff's GitHub repository](https://github.com/DavidAntliff/esp32-i2c-lcd1602-example/tree/master).
+  Our project integrates several open-source components, ensuring adherence to their respective licenses, we took references from the following sources:
+  - **DS3231-RTC Library**: This library is used as a reference for writing the drivers for interfacing with the DS3231 real-time clock module over SAMW25. It is sourced from [hasenradball's DS3231-RTC repository on GitHub](https://github.com/hasenradball/DS3231-RTC).
+  - **ESP32 I2C LCD1602 Example**: We utilized this example code as a reference to manage the LCD display via the I2C protocol, over SAMW25. The source code is available at [DavidAntliff's GitHub repository](https://github.com/DavidAntliff/esp32-i2c-lcd1602-example/tree/master).
 
 - **Acknowledgements**: 
   The development of our project was supported by various tools and platforms that significantly enhanced our productivity and debugging capabilities:
