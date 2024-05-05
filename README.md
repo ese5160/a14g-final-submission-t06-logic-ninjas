@@ -15,38 +15,73 @@ Link to video presentation of video:
 ## 2. Project Summary
 
 ### Device Description
-- **Problem Solved**: Briefly describe the problem that your device addresses.
-- **Internet Usage**: Explain how you use the Internet to enhance the functionality of your device.
+- **Problem Solved**: 
+  Our logic analyzer is a compact and user-friendly tool designed specifically for system developers working in dynamic environments, such as mobile robotics. The device supports essential protocols including SPI, UART, I2C, and GPIO, enabling it to monitor, sample, and decode data traffic effectively. It features an integrated real-time clock that timestamps transactions precisely, aiding in accurate diagnostics and analysis. The data captured is wirelessly transmitted to a web server, allowing users to access and interpret the decoded signals through a web-based dashboard. This functionality is crucial for streamlining the debugging process and enhancing the efficiency of system development tasks.
+
+- **Internet Usage**: 
+  The device utilizes Internet connectivity to enable remote data monitoring and analysis. By sending captured data to a cloud-based server, it allows users to access and interpret data from anywhere via the web-based dashboard. This connectivity not only facilitates immediate data access but also supports real-time alerts and updates, enhancing the user's ability to make informed decisions quickly.
 
 ### Inspiration
-- **Motivation**: Share what inspired you to initiate this project.
+- **Motivation**: 
+  The idea for this device was inspired by the challenges faced by professionals in various fields who require robust and mobile diagnostic tools:
+  
+  - **Embedded Systems Engineers**: Enables on-site debugging without dismantling equipment.
+  - **Robotics Developers**: Facilitates real-time monitoring and troubleshooting of robotic systems in motion.
+  - **DIY Electronics Hobbyists**: Ideal for experimentation with electronics projects in any setting.
+  - **Quality Assurance Professionals**: Streamlines electronic device testing in manufacturing environments.
+  - **Industrial Automation Technicians**: Key for diagnosing communication issues in automated machinery without halting production.
+  - **IoT Developers**: Critical for remote diagnostics of IoT devices in smart environments.
+  - **Automotive Electronics Engineers**: Useful for wireless diagnostics and performance checks in vehicular systems.
+  - **Windmill Maintenance Technicians**: Enables monitoring and fault finding in wind turbines without physical disassembly.
 
 ### Device Functionality
-- **Design Overview**: Describe how your Internet-connected device is designed. Mention sensors, actuators, and other critical components.
-- **Block Diagram**: Include your block diagram to illustrate the setup.
+- **Design Overview**: 
+  The device is equipped with four ADCs, each dedicated to monitoring a specific communication protocol, enhancing the precision of data capture. An RTC is integrated for timestamping data, which is stored on an SD card with timestamps used as file names. A port expander is utilized to increase the number of I/O ports on the board, accommodating additional functionalities. The primary actuator is the display, which notifies the user when data is being probed.
+
+- **Block Diagram**: 
+  ![Insert your block diagram image here]
 
 ### Challenges
-- **Difficulties Encountered**: List the main challenges you faced during the development (firmware, hardware, software, integration).
-- **Solutions**: Describe how you overcame these challenges.
+- **Difficulties Encountered**: 
+  The development faced several challenges:
+  - Incorrect swapping of CS and SCLK lines on the PCB.
+  - Managing task prioritization and monitoring for three I2C devices sharing the same bus.
+  
+- **Solutions**: 
+  - We resolved the PCB wiring issues by cutting the incorrect traces and manually rewiring them.
+  - Extensive manual testing and real-time monitoring through Percipio helped us refine task management and bus allocation.
 
 ### Prototype Learnings
-- **Lessons Learned**: Highlight the key lessons learned during the building and testing of your prototype.
-- **Improvements**: If you were to build this device again, what would you do differently?
+- **Lessons Learned**: 
+  The development process highlighted the importance of rigorous pre-production testing and the need for detailed schematic reviews to prevent layout errors. Additionally, real-time task monitoring proved invaluable in optimizing system performance and stability.
+
+- **Improvements**: 
+  Future iterations will correct the PCB design issues related to CS and SCLK line placements and consider using ADCs with higher resolution and faster sampling rates to enhance data accuracy.
 
 ### Next Steps
-- **Future Improvements**: Discuss what steps are needed to finish or improve your project.
-
-### Takeaways from ESE5160
-- **Course Learnings**: Detail what you learned through the lectures, assignments, and the course-long prototyping project in ESE5160.
+- **Future Improvements**: 
+To advance the project, we plan to upgrade the ADCs to models with superior resolution and sampling rates. This improvement will significantly enhance the device's capability to handle more complex and faster signal analyses, meeting the growing demands of advanced applications.
 
 ### Project Links
 - **Node-RED URL**: Provide the URL to your Node-RED instance running on your Azure instance.
-- **A12G Repository Link**: Include a link to your A12G code repository. Do not include your code in the A14G assignment's repository.
+- **A12G Repository Link**: Include a link to your A12G code repository: https://github.com/ese5160/a12g-firmware-drivers-t06-logic-ninjas
 - **Altium 365 PCBA Link**: Provide the share link to your final PCBA on Altium 365.
 
+
 ### Open Source and Acknowledgements
-- **Open Source Use**: Mention any open source code used in your project and ensure it's referenced according to its licensing.
-- **Acknowledgements**: Note any tools, websites, or expertise that heavily contributed to your project. Include these in your GitHub Readme.
+- **Open Source Use**: 
+  Our project integrates several open-source components, ensuring adherence to their respective licenses:
+  - **DS3231-RTC Library**: This library is used for interfacing with the DS3231 real-time clock module. It is sourced from [hasenradball's DS3231-RTC repository on GitHub](https://github.com/hasenradball/DS3231-RTC).
+  - **ESP32 I2C LCD1602 Example**: We utilized this example code to manage the LCD display via the I2C protocol, applicable to our ESP32 module. The source code is available at [DavidAntliff's GitHub repository](https://github.com/DavidAntliff/esp32-i2c-lcd1602-example/tree/master).
+
+- **Acknowledgements**: 
+  The development of our project was supported by various tools and platforms that significantly enhanced our productivity and debugging capabilities:
+  - **Percepio**: This software was instrumental in monitoring and visualizing runtime operations, greatly aiding in the debugging and optimization of our firmware.
+  - **Microchip Studio**: We used Microchip Studio for development, which provided a robust environment for coding, compiling, and testing our embedded software.
+  - **Node-RED**: Employed for creating and managing flow-based programming setups, Node-RED facilitated the integration and testing of network communications within our device.
+  
+  We extend our gratitude to all the developers and communities behind these resources. Their tools and code were invaluable in bringing our project to fruition.
+
 
 ## 3. Hardware & Software Requirements
 
