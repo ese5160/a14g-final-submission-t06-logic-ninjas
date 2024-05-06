@@ -162,15 +162,15 @@ To advance the project, we plan to upgrade the ADCs to models with superior reso
 #### Bottom View
 ![Bottom view of PCB](images/pcb_bottom.jpg)
 
-### Thermal Camera Images
+### Thermal Camera Imag
 ![Thermal camera image](images/thermal_cam.jpeg)
 
 ### Altium Board Design
 #### 2D View
-- **Screenshot**: Include a screenshot of the Altium board design in 2D view.
+![2D view](images/layout_2d.png)
 
 #### 3D View
-- **Screenshot**: Include a screenshot of the Altium board design in 3D view.
+![3D view](images/layout_3d.png)
 
 ### Node-RED
 #### Dashboard
