@@ -163,8 +163,7 @@ To advance the project, we plan to upgrade the ADCs to models with superior reso
 ![Bottom view of PCB](images/pcb_bottom.jpg)
 
 ### Thermal Camera Images
-- **Description**: Show thermal camera images of the board running under load.
-- **Image**: You may use your Board Bringup Thermal image here.
+![Thermal camera image](images/thermal_cam.jpeg)
 
 ### Altium Board Design
 #### 2D View
