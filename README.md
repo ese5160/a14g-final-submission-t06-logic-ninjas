@@ -174,14 +174,15 @@ To advance the project, we plan to upgrade the ADCs to models with superior reso
 
 ### Node-RED
 #### Dashboard
-- **Screenshot**: Upload a screenshot of your Node-RED dashboard.
+![Node-RED dashboard](images/nodered_dashboard.png)
 
 #### Backend
-- **Screenshot**: Upload a screenshot of your Node-RED backend.
+![Node-RED backend](images/nodered_backend.png)
 
 ### System Block Diagram
-- **Description**: Update and describe the block diagram of your system to reflect any changes made throughout the semester.
-- **Diagram**: Upload the updated block diagram.
+There were no significant changes made over the semester. The same block diagram was followed.
+
+![Simple System Diagram](images/1.png)
 
 ### Instructions for Viewing
 - **Viewing**: Provide instructions or tips for viewing the images and diagrams effectively if needed.
