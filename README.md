@@ -157,7 +157,7 @@ To advance the project, we plan to upgrade the ADCs to models with superior reso
 
 ### Standalone PCBA
 #### Top View
-- **Image**: Upload an image of the top view of your standalone PCBA.
+![Top view of PCB](images/pcb_top.jpg)
 
 #### Bottom View
 - **Image**: Upload an image of the bottom view of your standalone PCBA.
