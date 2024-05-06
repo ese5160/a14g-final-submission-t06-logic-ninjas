@@ -160,7 +160,7 @@ To advance the project, we plan to upgrade the ADCs to models with superior reso
 ![Top view of PCB](images/pcb_top.jpg)
 
 #### Bottom View
-- **Image**: Upload an image of the bottom view of your standalone PCBA.
+![Bottom view of PCB](images/pcb_bottom.jpg)
 
 ### Thermal Camera Images
 - **Description**: Show thermal camera images of the board running under load.
