@@ -63,9 +63,9 @@ Link to video presentation of video:
 To advance the project, we plan to upgrade the ADCs to models with superior resolution and sampling rates. This improvement will significantly enhance the device's capability to handle more complex and faster signal analyses, meeting the growing demands of advanced applications.
 
 ### Project Links
-- **Node-RED URL**: Provide the URL to your Node-RED instance running on your Azure instance.
-- **A12G Repository Link**: Include a link to your A12G code repository: https://github.com/ese5160/a12g-firmware-drivers-t06-logic-ninjas
-- **Altium 365 PCBA Link**: Provide the share link to your final PCBA on Altium 365.
+- **Node-RED URL**: http://13.90.136.162:1880/
+- **A12G Repository Link**: https://github.com/ese5160/a12g-firmware-drivers-t06-logic-ninjas
+- **Altium 365 PCBA Link**: https://upenn-eselabs.365.altium.com/designs/2FE26589-F062-4F1A-9B85-5B038DE51B92
 
 
 ### Open Source and Acknowledgements
@@ -152,8 +152,8 @@ To advance the project, we plan to upgrade the ADCs to models with superior reso
 
 
 ### Complete Project Showcase
-- **Description**: Briefly describe the full setup of your final project, including any casework or interfacing elements like 3D prints, screens, buttons, etc.
-- **Images**: Upload images showing the complete setup.
+
+The full setup included a 3D printed case for the logic analyzer. This case had spokes to press buttons on the PCB, and a slot for a Li-ion battery. There was one screen to display the current mode of operation.
 
 ### Standalone PCBA
 #### Top View
