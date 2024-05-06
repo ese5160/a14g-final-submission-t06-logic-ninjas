@@ -186,9 +186,3 @@ The full setup included a 3D printed case for the logic analyzer. This case had 
 There were no significant changes made over the semester. The same block diagram was followed.
 
 ![Simple System Diagram](images/1.png)
-
-### Instructions for Viewing
-- **Viewing**: Provide instructions or tips for viewing the images and diagrams effectively if needed.
-
-### Additional Notes
-- **Notes**: Include any additional notes or comments relevant to the visual documentation of your project.
