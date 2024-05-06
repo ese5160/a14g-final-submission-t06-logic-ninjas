@@ -155,6 +155,9 @@ To advance the project, we plan to upgrade the ADCs to models with superior reso
 
 The full setup included a 3D printed case for the logic analyzer. This case had spokes to press buttons on the PCB, and a slot for a Li-ion battery. There was one screen to display the current mode of operation.
 
+![PCB Case](images/pcb_case1.jpg)
+![PCB Case Opened](images/pcb_case2.jpg)
+
 ### Standalone PCBA
 #### Top View
 ![Top view of PCB](images/pcb_top.jpg)
