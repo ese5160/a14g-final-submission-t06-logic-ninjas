@@ -1,4 +1,3 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/kzkUPShx)
 # a14g-final-submission
 
     * Team Number: 6
@@ -66,6 +65,7 @@ To advance the project, we plan to upgrade the ADCs to models with superior reso
 - **Node-RED URL**: http://13.90.136.162:1880/
 - **A12G Repository Link**: https://github.com/ese5160/a12g-firmware-drivers-t06-logic-ninjas
 - **Altium 365 PCBA Link**: https://upenn-eselabs.365.altium.com/designs/2FE26589-F062-4F1A-9B85-5B038DE51B92
+- Website Link: https://ese5160.github.io/a14g-final-submission-t06-logic-ninjas/
 
 
 ### Open Source and Acknowledgements
