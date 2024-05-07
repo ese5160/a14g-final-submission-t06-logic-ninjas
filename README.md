@@ -10,6 +10,7 @@
 ## 1. Video Presentation
 
 Link to video presentation of video: 
+https://youtu.be/Bzsq5E1G8jM
 
 ## 2. Project Summary
 
