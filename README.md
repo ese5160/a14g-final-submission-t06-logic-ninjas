@@ -71,7 +71,6 @@ To advance the project, we plan to upgrade the ADCs to models with superior reso
 - **Altium 365 PCBA Link**: [Altium Web Link](https://upenn-eselabs.365.altium.com/designs/2FE26589-F062-4F1A-9B85-5B038DE51B92)
 - Website Link: [Github Pages](https://ese5160.github.io/a14g-final-submission-t06-logic-ninjas/)
 
-
 ### Open Source and Acknowledgements
 - **Open Source Use**: 
   Our project integrates several open-source components, ensuring adherence to their respective licenses, we took references from the following sources:
