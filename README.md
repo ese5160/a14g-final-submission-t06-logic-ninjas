@@ -10,7 +10,10 @@
 ## 1. Video Presentation
 
 Link to video presentation of video: 
-https://youtu.be/Bzsq5E1G8jM
+[Video Demonstration](https://youtu.be/Bzsq5E1G8jM)
+
+Video Credits: Maryam Ali
+
 
 ## 2. Project Summary
 
@@ -63,10 +66,10 @@ https://youtu.be/Bzsq5E1G8jM
 To advance the project, we plan to upgrade the ADCs to models with superior resolution and sampling rates. This improvement will significantly enhance the device's capability to handle more complex and faster signal analyses, meeting the growing demands of advanced applications.
 
 ### Project Links
-- **Node-RED URL**: http://13.90.136.162:1880/
-- **A12G Repository Link**: https://github.com/ese5160/a12g-firmware-drivers-t06-logic-ninjas
-- **Altium 365 PCBA Link**: https://upenn-eselabs.365.altium.com/designs/2FE26589-F062-4F1A-9B85-5B038DE51B92
-- Website Link: https://ese5160.github.io/a14g-final-submission-t06-logic-ninjas/
+- **Node-RED URL**: [Node-RED URL](http://13.90.136.162:1880/)
+- **A12G Repository Link**: [Repository](https://github.com/ese5160/a12g-firmware-drivers-t06-logic-ninjas)
+- **Altium 365 PCBA Link**: [Altium Web Link](https://upenn-eselabs.365.altium.com/designs/2FE26589-F062-4F1A-9B85-5B038DE51B92)
+- Website Link: [Github Pages](https://ese5160.github.io/a14g-final-submission-t06-logic-ninjas/)
 
 
 ### Open Source and Acknowledgements
